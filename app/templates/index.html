@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link href="{{ url_for('static', path='/index.css') }}" rel="stylesheet">
+    <script src="/static/js/index.js" defer></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>Team</h3>
+            <span class="status">Đang hoạt động</span>
+        </div>
+        <div class="chat-messages">
+        </div>
+        <div class="another-input">
+            <input type="text" placeholder="Input message here" class="another-field">
+        </div>
+        <div class="chat-input">
+            <button class="plus-button">+</button>
+            <input type="text" placeholder="Input message here" class="input-field">
+        </div>
+    </div>
+
+    <!-- Popup Container -->
+<div class="popup-container" id="popup" style="display: none;">
+    <div class="popup-content">
+        <h4>Set Meeting Duration</h4>
+        <div class="time-inputs">
+            <input type="number" id="hours" placeholder="Hours" min="0" class="time-input">
+            <input type="number" id="minutes" placeholder="Minutes" min="0" class="time-input">
+        </div>
+        <div class="popup-buttons">
+            <button id="submit-button">Submit</button>
+            <button id="cancel-button">Cancel</button>
+        </div>
+    </div>
+</div>
+<div class="pop-up-for-calendar" id="calendar-container" style="display: none;">
+    <div class="pop-up-calendar">
+        <h1>Weekly Calendar</h1>
+        <div id="calendar" class="calendar"></div>
+    </div>
+</div>
+</div>
+</body>
+</html>
