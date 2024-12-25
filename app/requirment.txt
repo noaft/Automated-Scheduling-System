@@ -1,6 +1,0 @@
-spacy
-transformers
-protobuf==3.20.*
-jinja2
-fastapi
-uvicorn

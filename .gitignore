@@ -1,0 +1,17 @@
+# Ignore Python cache directories
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+env/
+
+# Other ignores
+*.log
+*.db
+*.json
+*.png
+*.pth
+*.pkl
+*.csv
+*.txt
